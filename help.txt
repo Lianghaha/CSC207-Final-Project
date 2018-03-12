@@ -85,7 +85,6 @@ Project Overview:
 	- List of Files in the Project Directory:
 		> 16orders.txt: The default input file which processes 16 orders with no errors
 		> design.pdf: The UML representation of our project files
-		> duties.txt: A text file containing contributions of each group member
 		> eventLoaderRescan.txt: An alternate input file. Details described below
 		> eventOutOfInventory.txt: An alternate input file. Details described below
 		> eventPickerRescan.txt: An alternate input file. Details described below
