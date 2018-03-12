@@ -1,0 +1,42 @@
+Order SE Beige
+Order SE Beige
+Order SE Beige
+Order SE Beige
+Picker Alice ready
+Picker Alice picked 11
+Picker Alice picked 11
+Picker Alice picked 11
+Picker Alice picked 11
+Picker Alice picked 12
+Picker Alice picked 12
+Picker Alice picked 12
+Picker Alice picked 12
+Picker Alice to Marshaling
+Sequencer Sue ready
+Sequencer Sue sequenced 11
+Sequencer Sue sequenced 11
+Sequencer Sue sequenced 11
+Sequencer Sue sequenced 11
+Sequencer Sue sequenced 12
+Sequencer Sue sequenced 12
+Sequencer Sue sequenced 12
+Sequencer Sue sequenced 12
+Sequencer Sue finished
+Loader Bill ready
+Loader Bill loaded 11
+Loader Bill loaded 11
+Loader Bill loaded 11
+Loader Bill loaded 11
+Loader Bill loaded 12
+Loader Bill loaded 12
+Loader Bill loaded 12
+Loader Bill loaded 12
+Loader Bill finished
+Order SE Beige
+Order SE Beige
+Order SE Beige
+Order SE Beige
+Picker Alice ready
+Picker Alice picked 11
+Picker Alice picked 11
+Picker Alice picked 11
