@@ -58,14 +58,14 @@ Below are contents from help.txt:
 
 Running Our Program:
 
-	- Using the Terminal:
+- Using the Terminal:
 		1. Simply copy and paste the command lines above to run our program. The main method in Simulation.java will run the program simulation.
 		2. After navigating to our project directory (as shown with line 1), start by copying and pasting the second line as described above.
 		3. Lines 3-9 will handle passing file path directory as arguments automatically, simply copy and paste any of the line to run the simulation with the respective files
 		4. To run a custom input file, use the format shown on line 3 and simply replace the parameter with the name of the new input file
 
-	- Using Eclipse IDE:
-		I. Create a Java Project for the program:
+- Using Eclipse IDE:
+	I. Create a Java Project for the program:
 			1. Create a new workspace in Eclipse if needed
 			2. Using the Eclipse toolbar, create a new Java Project: File -> New -> Java Project
 			3. Rename the project as needed
@@ -73,7 +73,7 @@ Running Our Program:
 			5. Click Browse and navigate to the directory "group_0371/project", then click open
 			6. Click "Finish" and the program will be accessible as a Java Project in Eclipse
 
-		II: Installing the necessary plugins for JUnit Tests
+	II: Installing the necessary plugins for JUnit Tests
 			1. Locate the Java Project in Project Explorer or Package Explorer
 			2. Right click on the project header
 			3. Select Build Path -> Configure Build Path -> Libraries
@@ -87,7 +87,7 @@ Running Our Program:
 				2. Locate "mockito-all-2.0.2-beta.jar" in the project directory
 				3. Apply the changes and press "Ok"
 
-		III: Running the program with input files
+	III: Running the program with input files
 			1. Open Simulation.java from the Java Project
 			2. Using the Eclispe toolbar, select Run -> Run Configurations…
 			3. Ensure the Main Class is warehousesystem.Simulation
@@ -106,10 +106,8 @@ Program Outputs:
 				- Simulation Events from Worker actions
 				- Errors during simulation
 				- Other information recorded by classes
-		
 		II) final.csv:
 			A CSV file which records the state of all storages in the warehouse that are not full, in the same forma as initial.csv
-
 		III) order.csv:
 			A CSV file that records all orders completed and loaded onto the truck in the simulation. Uses the format Colour, Model
 
