@@ -40,7 +40,10 @@
     
     
     
+    
 Below are contents from help.txt:
+
+
 
 cd group_0371/project
 javac -cp src src/warehousesystem/Simulation.java
