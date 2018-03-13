@@ -6,10 +6,13 @@ This purpose of this project is to desigin a system that provides computer suppo
 1.How does the program work?
 
   1. To make the program organized and readable, we create OrderManager, WarehousPicking and StorageManager Classes that interact with other classes to handle different part of work. 
+  
   2.Recieve and translate order
     The program recieve the order from input and send it to OrderManager. OrderManager will translate the order (using translation.csv) from text to SKU number which the warehouse uses to represent product. The OrderManager will hold the order until there is certain amount of Orders recieved.
+  
   3.Generate Picking Request. 
     When certain amount of orde is recieved, the OrderManager will send data to WarehousePicking to generate PickingRequest. The WarehousePicking will assign PickingRequest a Picker(a type of Worker) if the Picker is ready. The WarehousePicking will also get the location of the product(using traversal_table.csv) and tell the Picker where to pick the product. If no worker is ready, the WarehousePicking will hold the PickingRequest in a waitlist.   
+  
   4.Picker(a type of Worker) picks product.
     Picker will notify the system when he picks a product by scanning the SKU number on the product. System will call StorageManager to modify the inventory.
     
