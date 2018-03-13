@@ -57,6 +57,7 @@ Below are contents from help.txt:
 
 
 Running Our Program:
+
 	- Using the Terminal:
 		1. Simply copy and paste the command lines above to run our program. The main method in Simulation.java will run the program simulation.
 		2. After navigating to our project directory (as shown with line 1), start by copying and pasting the second line as described above.
