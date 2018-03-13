@@ -8,11 +8,11 @@
     
     We were required to work in group of four people, so we needed to write organized and readable code that can be easily explained to and shared with others, and we also should be ablt to work on the code that are developed by other people.
     
-    We only had several weeks to design and implement our program while we had other school works to do. Thus, Our ability of intense coding and debugging were enhanced while completing this project.  
+    We only had several weeks to design and implement our program while we had other school works to do. Thus, Our ability of intense coding and debugging were greatly enhanced by completing this project.  
     
     
 2. What is the project about?
-    The purpose of this project is to desigin a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers, and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of input(orders from customer, actions from worker) and generate correct output(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customes by receving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
+    The purpose of this project is to desigin a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of inputs(orders from customer, actions from worker) and generate correct outputs(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customes by receving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
     
 3. Program Unit Tests:
 
