@@ -5,7 +5,9 @@
     The purpose of this project is to desigin a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers, and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of input(orders from customer, actions from worker) and generate correct output(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customes by receving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
     
 2. Program Unit Tests:
-        90% of the code is covered by the tests. We've used 2 tools to accomplish it:
+
+    90% of the code is covered by the tests. We've used 2 tools to accomplish it:
+    
     1. Mockito:
     A third-party Java Framework Library that allows us to create mock objects for testing dependency-heavy classes, in our case WarehouseController and WarehouseSystem
     2. JUnit 4: 
