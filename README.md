@@ -59,10 +59,13 @@ Below are contents from help.txt:
 Running Our Program:
 
 - Using the Terminal:
-		1. Simply copy and paste the command lines above to run our program. The main method in Simulation.java will run the program simulation.
-		2. After navigating to our project directory (as shown with line 1), start by copying and pasting the second line as described above.
-		3. Lines 3-9 will handle passing file path directory as arguments automatically, simply copy and paste any of the line to run the simulation with the respective files
-		4. To run a custom input file, use the format shown on line 3 and simply replace the parameter with the name of the new input file
+	1. Simply copy and paste the command lines above to run our program. The main method in Simulation.java will run the program simulation.
+		
+	2. After navigating to our project directory (as shown with line 1), start by copying and pasting the second line as described above.
+		
+	3. Lines 3-9 will handle passing file path directory as arguments automatically, simply copy and paste any of the line to run the simulation with the respective files
+		
+	4. To run a custom input file, use the format shown on line 3 and simply replace the parameter with the name of the new input file
 
 - Using Eclipse IDE:
 	I. Create a Java Project for the program:
