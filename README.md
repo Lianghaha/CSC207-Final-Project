@@ -2,7 +2,7 @@
 
 1. Leaning objective of the project.
     
-    The learning objective of this project is to utilize the design concepts and Java knowledge we learned from the course to develop a Java program that solves problems. We were only given the demand and requirement of the project, so we had to figure out the boundries and design the stucture of the program by outselives. We were also requied to write lot of unittests, work with other people and implement our program in a short amount of time. 
+    The learning objective of this project is to utilize the design concepts and Java knowledge we learned from the course to develop a Java program that solves problems. We were only given the demands and requirements of the project, so we had to figure out the boundries and design the stucture of the program by outselives. We were also requied to write lot of unittests, work with other people and implement our program in a short amount of time. 
     
     We were required to write unittest and make the test coerage as high as possible. We wrote unitest for all methods that can be tested and reached 90%+ coverage. 
     
