@@ -68,13 +68,14 @@ Running Our Program:
 	4. To run a custom input file, use the format shown on line 3 and simply replace the parameter with the name of the new input file
 
 - Using Eclipse IDE:
+	
 	I. Create a Java Project for the program:
-			1. Create a new workspace in Eclipse if needed
-			2. Using the Eclipse toolbar, create a new Java Project: File -> New -> Java Project
-			3. Rename the project as needed
-			4. Uncheck "Use Default Location"
-			5. Click Browse and navigate to the directory "group_0371/project", then click open
-			6. Click "Finish" and the program will be accessible as a Java Project in Eclipse
+		1. Create a new workspace in Eclipse if needed
+		2. Using the Eclipse toolbar, create a new Java Project: File -> New -> Java Project
+		3. Rename the project as needed
+		4. Uncheck "Use Default Location"
+		5. Click Browse and navigate to the directory "group_0371/project", then click open
+		6. Click "Finish" and the program will be accessible as a Java Project in Eclipse
 
 	II: Installing the necessary plugins for JUnit Tests
 			1. Locate the Java Project in Project Explorer or Package Explorer
