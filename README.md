@@ -45,15 +45,15 @@ Below are contents from help.txt:
 
 
 
-cd group_0371/project
-javac -cp src src/warehousesystem/Simulation.java
-java -cp src warehousesystem/Simulation 16orders.txt
-java -cp src warehousesystem/Simulation eventPickerRescan.txt
-java -cp src warehousesystem/Simulation eventSequencerRescan.txt
-java -cp src warehousesystem/Simulation eventLoaderRescan.txt
-java -cp src warehousesystem/Simulation eventOutOfInventory.txt
-java -cp src warehousesystem/Simulation eventSetReadyBeforeFinished.txt
-java -cp src warehousesystem/Simulation eventReplenisherRescan.txt
+	cd group_0371/project
+	javac -cp src src/warehousesystem/Simulation.java
+	java -cp src warehousesystem/Simulation 16orders.txt
+	java -cp src warehousesystem/Simulation eventPickerRescan.txt
+	java -cp src warehousesystem/Simulation eventSequencerRescan.txt
+	java -cp src warehousesystem/Simulation eventLoaderRescan.txt
+	java -cp src warehousesystem/Simulation eventOutOfInventory.txt
+	java -cp src warehousesystem/Simulation eventSetReadyBeforeFinished.txt
+	java -cp src warehousesystem/Simulation eventReplenisherRescan.txt
 
 
 Running Our Program:
