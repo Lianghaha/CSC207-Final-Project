@@ -69,7 +69,7 @@ Running Our Program:
 
 - Using Eclipse IDE:
 	
-	I. Create a Java Project for the program:
+	1. Create a Java Project for the program:
 		1. Create a new workspace in Eclipse if needed
 		2. Using the Eclipse toolbar, create a new Java Project: File -> New -> Java Project
 		3. Rename the project as needed
@@ -77,10 +77,10 @@ Running Our Program:
 		5. Click Browse and navigate to the directory "group_0371/project", then click open
 		6. Click "Finish" and the program will be accessible as a Java Project in Eclipse
 
-	II: Installing the necessary plugins for JUnit Tests
-			1. Locate the Java Project in Project Explorer or Package Explorer
-			2. Right click on the project header
-			3. Select Build Path -> Configure Build Path -> Libraries
+	2. Installing the necessary plugins for JUnit Tests
+		1. Locate the Java Project in Project Explorer or Package Explorer
+		2. Right click on the project header
+		3. Select Build Path -> Configure Build Path -> Libraries
 			A) JUnit 4
 				1. Click on "Add Library"
 				2. Select JUnit and continue
@@ -90,15 +90,15 @@ Running Our Program:
 				1. Click on Add External JARs
 				2. Locate "mockito-all-2.0.2-beta.jar" in the project directory
 				3. Apply the changes and press "Ok"
-
-	III: Running the program with input files
-			1. Open Simulation.java from the Java Project
-			2. Using the Eclispe toolbar, select Run -> Run Configurations…
-			3. Ensure the Main Class is warehousesystem.Simulation
-			4. Select the tab "(x) = Arguments"
-			5. In "Program Arguments", add in "16orders.txt" or the file name of the input file desired
-			6. Select Run to run the program
-			7. The Program's log outputs will also be shown in the Eclipse console
+				
+	3. Running the program with input files
+		1. Open Simulation.java from the Java Project
+		2. Using the Eclispe toolbar, select Run -> Run Configurations…
+		3. Ensure the Main Class is warehousesystem.Simulation
+		4. Select the tab "(x) = Arguments"
+		5. In "Program Arguments", add in "16orders.txt" or the file name of the input file desired
+		6. Select Run to run the program
+		7. The Program's log outputs will also be shown in the Eclipse console
             
 Program Outputs:
 	After the program runs, it will create 3 new files that display the final results.
@@ -120,6 +120,7 @@ Program Outputs:
 
 Project Overview:
 	- List of Files in the Project Directory:
+	
 		> 16orders.txt: The default input file which processes 16 orders with no errors
 		> design.pdf: The UML representation of our project files
 		> eventLoaderRescan.txt: An alternate input file. Details described below
