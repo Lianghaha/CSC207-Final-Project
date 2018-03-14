@@ -1,20 +1,21 @@
 # CSC207-Project
 
-1. Leaning objective of the project.
+1. Learning objective of the project.
     
-    The learning objective of this project is to utilize the design concepts and Java knowledge we learned from the course to develop a Java program that solves problems. We were only given the demands and requirements of the project, so we had to figure out the boundries and design the stucture of the program by outselives. We were also requied to write lot of unittests, work with other people and implement our program in a short amount of time. 
+    The learning objective of this project is to utilize the design concepts and Java knowledge we learned from the course to develop a Java program that solves problems. We were only given the demands and requirements of the project, so we had to figure out the boundaries and design the structure of the program by ourselves. We were also required to write a lot of unittests, work with other people and implement our program in a short amount of time. You can find the UML of the program in "design.pdf".
     
-    We were required to write unittest and make the test coerage as high as possible. We wrote unitest for all methods that can be tested and reached 90%+ coverage. 
+    We were required to write unittests and make the test coverage as high as possible. We wrote unittests for all methods that can be tested and reached 90%+ coverage. 
     
-    We were required to work in group of four people, so we needed to write organized and readable code that can be easily explained to and shared with others, and we also should be ablt to work on the code that are developed by other people.
+    We were required to work in a group of four people, so we needed to write organized and readable code that can be easily explained to and shared with others, and we also should be able to work on the code that is developed by other people.
     
-    We only had several weeks to design and implement our program while we had other school works to do. Thus, Our ability of intense coding and debugging were greatly enhanced by completing this project.  
+    We only had several weeks to design and implement our program while we had other school works to do. Thus, Our ability of intense coding and debugging was greatly enhanced by completing this project.  
     
     
 2. What is the project about?
-    The purpose of this project is to desigin a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of inputs(orders from customer, actions from worker) and generate correct outputs(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customes by receving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
+
+    The purpose of this project is to design a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of inputs(orders from the customer, actions from worker) and generate correct outputs(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customers by receiving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
     
-3. Program Unit Tests:
+3. UnitTests:
 
     More than 90% of the code is covered by the tests. We've used 2 tools to accomplish it:
     
@@ -24,22 +25,50 @@
     An Eclipse built-in library that allows us to consolidate all of our tests into a test suite, which we've called "AllTest.java"
                
 
-4. Details about How the program works?
-    1. To make the program organized and readable, we create OrderManager, WarehousPicking and StorageManager Classes that interact with other classes to handle different part of work. 
+4. Details about How the program works.
+
+    1. To make the program organized, we create OrderManager, WarehousePicking and StorageManager Classes that interact with other classes to handle different parts of work. 
     
-    2. Recieve and translate order
-    The program recieve the order from input and send it to OrderManager. OrderManager will translate the order (using translation.csv) from text to SKU number which the warehouse uses to represent product. The OrderManager will hold the order until there is certain amount of Orders recieved.
+    2. Recieve and translate the order
     
-    3. Generate Picking Request. 
-    When certain amount of orde is recieved, the OrderManager will send data to WarehousePicking to generate PickingRequest. The WarehousePicking will assign PickingRequest a Picker(a type of Worker) if the Picker is ready. The WarehousePicking will also get the location of the product(using traversal_table.csv) and tell the Picker where to pick the product. If no worker is ready, the WarehousePicking will hold the PickingRequest in a waitlist.   
+    The program receives the order from and sends it to OrderManager. OrderManager will translate the order (using "translation.csv") from text to SKU number which the warehouse uses to represent the product. The OrderManager will hold the order until there is a certain amount of Orders received.
     
-    4. Picker(a type of Worker) picks product.
-    Picker will notify the system when he picks a product by scanning the SKU number on the product. System will call StorageManager to modify the inventory.
+    3. Generate Picking Request.
     
-    5. Sequencer sequance the product.
+    When a certain amount of order is received, the OrderManager will tansfer data to WarehousePicking to generate PickingRequest. The WarehousePicking will assign PickingRequest a Picker(a type of Worker) if the Picker is ready. The WarehousePicking will also get the location of the product(using "traversal_table.csv") and tell the Picker where to pick the product. The system will also calculate the shotest path and send it to Picker. If no worker is ready, the WarehousePicking will hold the PickingRequest on a waitlist.   
     
+    4. Picker(a type of Worker) picks a product.
     
+    Picker will notify the system when he picks a product by scanning a SKU number using barcode reader. The system will notify StorageManager to modify the inventory.
     
+    5. Sequencer(a type of Worker) sequence the products.
+    	
+	When Picker finishes his work, he will notify the system by tapping "finish" bottom on the barcode reader and this action will send a message to the system. The WarehousePicking will change the status of the PickingRequest and assign the PickingRequest to a Sequencer if the Sequencer is ready. The Sequencer is responsible to sequence the product in a specific order before loading. The system will show the correct order to the Sequencer and check whether the Sequencer has done his job right when the Sequencer scans the SKU number of the product. If no worker is ready, the WarehousePicking will hold the PickingRequest on a waitlist. If the Picker picked wrong product, the Sequencer can throw away the product by tapping "throw away" bottom on the barcode reader. A message will be sent to the system, and the system will notify the WasrehousePicking to change the status of the PickingRequest.
+    
+    6. Loader(a type of Worker) loads the product to the truck.
+    
+    When Sequencer finishes his work, he will notify the system by tapping "finish" bottom on the barcode reader and this action will send a message to the system. The WarehousePicking will change the status of the PickingRequest and assign the PickingRequest to a Loader if the Loader is ready. The Loader is responsible check wether the products are sequenced in a correct order before loading, and then loads the product to the truck. The system will show the correct order to the Loader and check whether the order is correct when Loader scans the SKU number of the product. When the Loader scans the SKU number, the system will record the SKU number and generate an output file showing what products are in the truck and where are the products been places. If no worker is ready, the WarehousePicking will hold the PickingRequest on a waitlist. The Loader can throw away the product by tapping "throw away" bottom on the barcode reader if the Loader finds out that sequencer made a mistake. A message will be sent to the system, and the system will notify the WasrehousePicking to change the status of the PickingRequest.
+    
+    7. Replenisher(a type of Worker) replenishes the product.
+    
+    The system monitors the inventory level of the warehouse and will notify Replenisher when the inventory level is lower than a certain amount. When the Replenisher replenishes, the Replenisher will scan the SKU number of the products. After the system receives the message, it will notify the StorageManager to change the inventory level.  
+    
+    8. Termination and Output files
+    
+    After the program runs, it will create 3 new files that display the final results.
+    	
+	1. log.txt: A text file which contains the information recorded by WarehouseSystem's logger. The log contains information on:
+		
+		1. Input read from Input Files
+		2. Simulation Events from Processing Input
+		3. Information exchanged between classes, such as messages between Barcode Readers and the Warehouse System
+		4. Simulation Events from Worker actions
+		5. Errors during simulation
+		6. Other information recorded by classes
+		
+	2. final.csv: A CSV file which records the state of all storages in the warehouse that are not full, in the same forma as initial.csv
+	
+	3. order.csv: A CSV file that records all orders completed and loaded onto the truck in the simulation. Uses the format  
     
 Below are contents from help.txt:
 
