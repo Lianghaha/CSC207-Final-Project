@@ -1,6 +1,6 @@
 # CSC207-Project
 
-1. Learning objective of the project.
+1. Learning objectives of this project.
     
     The learning objective of this project is to utilize the design concepts and Java knowledge we learned from the course to develop a Java program that solves problems. We were only given the demands and requirements of the project, so we had to figure out the boundaries and design the structure of the program by ourselves. We were also required to write a lot of unittests, work with other people and implement our program in a short amount of time. You can find the UML of the program in "design.pdf".
     
@@ -11,7 +11,7 @@
     We only had several weeks to design and implement our program while we had other school works to do. Thus, Our ability of intense coding and debugging was greatly enhanced by completing this project.  
     
     
-2. What is the project about?
+2. What is this project about?
 
     The purpose of this project is to design a system that provides computer support to a warehousing company. This program should be able to track the status of the orders from the customer, provide computer support for warehousing workers and keep track of inventory levels in the warehouse. Thus, the program should be able to distinguish different types of inputs(orders from the customer, actions from worker) and generate correct outputs(order status, level of inventory, tell workers where to go, what to do......). In reality, the program might communicate with workers and customers by receiving and sending data through barcode reader or website, but, in this project, the input and output of the system are simplified to lines of texts that are stored in txt files. This simplification helps us to focus on the processing part of the program.    
     
