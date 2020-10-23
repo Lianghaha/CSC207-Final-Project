@@ -1,4 +1,4 @@
-# CSC207-Project
+# Warehouse Management Application
 
 1. Learning objectives of this project.
     
